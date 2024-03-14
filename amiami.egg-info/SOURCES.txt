@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+amiami/__init__.py
+amiami/amiami.py
+amiami/test.py
+amiami.egg-info/PKG-INFO
+amiami.egg-info/SOURCES.txt
+amiami.egg-info/dependency_links.txt
+amiami.egg-info/requires.txt
+amiami.egg-info/top_level.txt
