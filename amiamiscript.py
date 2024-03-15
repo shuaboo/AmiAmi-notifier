@@ -16,9 +16,9 @@ def amiami_search():
   for line in lines:
     results = amiami.search(str(line))
     for item in results.items:
-      #if item.availability == "Available":
-      print(("{}, {}".format(item.productName, item.availability)))
-      print("\n")
+      if item.availability == "Available":
+        print(("{}, {}".format(item.productName, item.availability)))
+        print("\n")
 
 
 
