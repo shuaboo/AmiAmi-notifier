@@ -11,14 +11,15 @@ def open_file():
     return lines
 
 def amiami_search():
+
   lines = open_file()
-  
   for line in lines:
     results = amiami.search(str(line))
     for item in results.items:
       if item.availability == "Available":
         print(("{}, {}".format(item.productName, item.availability)))
         print("\n")
+  
 
 
 
