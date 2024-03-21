@@ -1,0 +1,20 @@
+name: search AmiAmi daily
+on:
+  schedule:
+    - cron: "0 0 * * *"
+
+jobs:
+  example-job:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./
+    steps:
+      - name: Check out the repository to the runner
+        uses: actions/checkout@v4  
+      - name: Run a script
+        id: amiamiscript
+        run: ./amiamiscript.py >> "$GITHUB_OUTPUT"
+      - name: output results
+        id: outputresults
+        run: echo "$OUTPUT1"
