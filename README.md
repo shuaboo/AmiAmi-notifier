@@ -12,3 +12,6 @@ blue archive figure
 ```
 
 currently exists an issue with the amiami API where it cannot display queries with a large number of results
+
+
+Working on github actions to automate search query
